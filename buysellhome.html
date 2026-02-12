@@ -229,7 +229,8 @@ body {
 
       <div class="cards">
 
-        <button class="card">
+        <!--button class="card"-->
+        <button class="card" onclick="goToBuy()">
           <div class="card-inner">
             <div class="icon-circle buy-bg">
               <i data-lucide="shopping-bag"></i>
@@ -241,7 +242,9 @@ body {
           </div>
         </button>
 
-        <button class="card">
+        <!--button class="card"-->
+        <button class="card" onclick="goToSell()">
+
           <div class="card-inner">
             <div class="icon-circle sell-bg">
               <i data-lucide="store"></i>
@@ -278,8 +281,19 @@ body {
 
 </div>
 
+<!--script>
+  lucide.createIcons();
+</script-->
 <script>
   lucide.createIcons();
+
+  function goToBuy() {
+    window.location.href = "buypet.html";
+  }
+
+  function goToSell() {
+    window.location.href = "sellpet.html";
+  }
 </script>
 
 </body>
